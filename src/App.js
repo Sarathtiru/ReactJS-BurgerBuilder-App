@@ -39,12 +39,14 @@ class App extends Component {
           <Route path="/orders" component={asyncOrders} />
           <Route path="/logout" component={Logout} />
           <Route path="/auth" component={asyncAuth} />
-          <Route path="/" exact component={BurgerBuilder} />
+          <Route path="/React-JS-BurgerBuilder-App/" exact component={BurgerBuilder} />
           <Redirect to="/" />
         </Switch>
       );
     }
+    
     return (
+      
       <div>
         <Layout>{routes}</Layout>
       </div>
